@@ -1,0 +1,57 @@
+h1{
+	text-align:center; /*文字置中*/
+}
+
+.hide{
+	display: none;
+}
+
+#panel{
+	margin: 0 auto;
+	padding: 30px;
+	width: 600px;
+	background-color: #DCDCDC;
+}
+
+#todo-list ul{
+	margin: 0; /*初始*/
+	padding: 0; /*初始*/
+	list-style-type: none; /*設定列表清單點的屬性:沒有*/
+}
+#todo-list li{
+	display: flex;
+	padding: 10px;
+}
+#todo-list li.complete .checkbox{
+	background-color: #777;
+}
+
+#todo-list li.complete .content{
+	text-decoration: line-through;
+}
+
+#todo-list li:hover{
+	background-color: #f8f8f8;
+}
+
+#todo-list .content{
+	flex: 1;
+}
+
+#todo-list .actions > *{ /* * = all */
+	cursor: pointer;
+	padding: 0 10px;
+}
+
+.delete{
+	background-color: #eee;
+}
+
+#todo-list .checkbox{
+	margin-right: 10px;
+	border-radius: 50%; /*只要是寬高的一半 就會變為圓形*/
+	width: 25px;
+	height: 25px;
+	background-color: #A9A9A9;
+	cursor: pointer;
+}
